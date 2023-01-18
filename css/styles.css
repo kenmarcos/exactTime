@@ -2,17 +2,26 @@
   font-family: "Montserrat", sans-serif;
 }
 
+:root {
+  --black-800: #101010;
+  --black-600: #252525;
+  --white: #fff;
+  --pink-100: #fcf5eb;
+  --brown-400: #c09578;
+  --gray: #626262;
+}
+
 body {
-  background-color: #252525;
+  background-color: var(--black-600);
   color: #fff;
 }
 
 .primary-bg-color {
-  background-color: #252525;
+  background-color: var(--black-600);
 }
 
 .secondary-bg-color {
-  background-color: #c09578;
+  background-color: var(--brown-400);
 }
 
 .light-bg-color {
@@ -20,17 +29,116 @@ body {
 }
 
 .dark-bg-color {
-  background-color: #101010;
+  background-color: var(--black-800);
 }
 
 .primary-color {
-  color: #c09578;
+  color: var(--brown-400);
 }
 
 .primary-color {
-  color: #626262;
+  color: var(--gray);
 }
 
 .light-color {
-  color: #fcf5eb;
+  color: var(--pink-100);
+}
+
+/* NAVBAR */
+#navbar a,
+#navbar button {
+  color: var(--white);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+}
+
+#navbar-items {
+  justify-content: space-between;
+}
+
+#navbar .navbar-nav {
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+#navbar .navbar-nav li {
+  margin-left: 1em;
+  position: relative;
+}
+
+#navbar i {
+  font-size: 20px;
+}
+
+#navbar .badge {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  padding: 0;
+  line-height: unset;
+  border-radius: 50%;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+}
+
+#bag-item span {
+  left: 20px;
+}
+
+#search-form {
+  width: 100%;
+  margin: 2em 0;
+  border: 2px solid var(--gray);
+  border-radius: 3px;
+  padding: 5px 15px;
+}
+
+#search-form input {
+  background-color: transparent;
+  border: none;
+  color: var(--white);
+}
+
+#search-form input:focus {
+  box-shadow: none;
+}
+
+#search-form input::placeholder {
+  color: var(--white);
+}
+
+/* BOTTOM NAVBAR */
+#bottom-navbar-container .container {
+  justify-content: flex-end;
+}
+
+#bottom-navbar-container a {
+  font-weight: 600;
+  color: var(--white);
+}
+
+.navbar-toggler {
+  font-size: 1.5em;
+}
+
+@media (min-width: 768px) {
+  /* NAVBAR */
+  .navbar-brand {
+    text-align: left;
+  }
+
+  #navbar-items {
+    display: flex;
+    min-width: 80%;
+  }
+
+  #search-form {
+    margin: 0;
+    width: 50%;
+  }
 }
