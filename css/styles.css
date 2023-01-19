@@ -36,7 +36,7 @@ body {
   color: var(--brown-400);
 }
 
-.primary-color {
+.secondary-color {
   color: var(--gray);
 }
 
@@ -137,6 +137,61 @@ body {
 
 .carousel-caption h5 {
   font-size: 1.8em;
+}
+
+/* MINI BANNERS */
+#mini-banners {
+  z-index: 10;
+  margin-top: -3em;
+}
+
+#mini-banners .col-12 {
+  z-index: 1;
+  height: 300px;
+  padding: 1em;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 30%;
+}
+
+#mini-banners .col-12 h2 {
+  text-transform: uppercase;
+  max-width: 50px;
+  font-size: 2.2em;
+  font-weight: 700;
+  line-height: 1em;
+}
+
+#mini-banners .col-12 img {
+  height: 220px;
+  position: absolute;
+  right: 1em;
+  bottom: 1em;
+}
+
+#mini-banners .col-12 a {
+  font-weight: bold;
+  color: var(--white);
+  font-size: 0.8em;
+  transition: 0.5s;
+}
+
+#mini-banners .col-12 a:hover {
+  color: #101010;
+}
+
+#mini-banners #mini-banner-1 a:hover {
+  color: #c09578;
+}
+
+#mini-banners #mini-banner-3 a {
+  color: #101010;
+}
+
+#mini-banners #mini-banner-3 a:hover {
+  color: #c09578;
 }
 
 @media (min-width: 768px) {
