@@ -126,6 +126,19 @@ body {
   font-size: 1.5em;
 }
 
+/* SLIDER */
+.carousel-caption {
+  bottom: 50%;
+  transform: translateY(50%);
+  left: 12%;
+  right: 12%;
+  padding: 1em;
+}
+
+.carousel-caption h5 {
+  font-size: 1.8em;
+}
+
 @media (min-width: 768px) {
   /* NAVBAR */
   .navbar-brand {
@@ -140,5 +153,21 @@ body {
   #search-form {
     margin: 0;
     width: 50%;
+  }
+
+  /* SLIDER */
+  .carousel-item {
+    height: 600px;
+  }
+
+  .carousel-caption {
+    left: 23%;
+    right: 23%;
+    bottom: 5em;
+    transform: unset;
+  }
+
+  .carousel-caption h5 {
+    font-size: 4em;
   }
 }
