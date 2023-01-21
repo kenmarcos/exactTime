@@ -237,6 +237,28 @@ body {
   margin: 2em 0;
 }
 
+/* BANNER DE DESTQUE */
+#bottom-banner {
+  background-color: var(--black-800);
+  padding: 6em;
+  margin-bottom: 4em;
+}
+
+.offer-subtitle,
+#bottom-banner h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#bottom-banner .btn {
+  margin: 2em;
+  padding: 1em;
+}
+
+#bottom-banner img {
+  max-width: 175px;
+}
+
 @media (min-width: 768px) {
   /* NAVBAR */
   .navbar-brand {
@@ -272,5 +294,10 @@ body {
   /* BEST SELLERS */
   .title {
     text-align: left;
+  }
+
+  /* BANNER DE DESTAQUE */
+  #bottom-banner h2 {
+    font-size: 6em;
   }
 }
