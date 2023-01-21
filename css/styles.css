@@ -44,6 +44,16 @@ body {
   color: var(--pink-100);
 }
 
+.btn {
+  background-color: transparent;
+  border-color: var(--brown-400);
+}
+
+.btn:hover {
+  background-color: var(--brown-400);
+  border-color: var(--brown-400);
+}
+
 /* NAVBAR */
 #navbar a,
 #navbar button {
@@ -194,6 +204,39 @@ body {
   color: #c09578;
 }
 
+/* BEST SELLERS */
+#best-sellers {
+  padding: 5em 0;
+}
+
+.title {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 2.5em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.card {
+  text-align: center;
+  border-radius: 0;
+  height: 100%;
+}
+
+.card img {
+  width: 140px;
+  margin: 2em auto;
+}
+
+.card-category {
+  font-size: 0.8em;
+}
+
+.card-text {
+  font-weight: bold;
+  margin: 2em 0;
+}
+
 @media (min-width: 768px) {
   /* NAVBAR */
   .navbar-brand {
@@ -224,5 +267,10 @@ body {
 
   .carousel-caption h5 {
     font-size: 4em;
+  }
+
+  /* BEST SELLERS */
+  .title {
+    text-align: left;
   }
 }
