@@ -237,7 +237,7 @@ body {
   margin: 2em 0;
 }
 
-/* BANNER DE DESTQUE */
+/* BANNER DE DESTAQUE */
 #bottom-banner {
   background-color: var(--black-800);
   padding: 6em;
@@ -257,6 +257,30 @@ body {
 
 #bottom-banner img {
   max-width: 175px;
+}
+
+/* NOVOS PRODUTOS */
+#new-products {
+  margin-bottom: 5em;
+}
+
+#new-products-banner {
+  background-color: var(--black-800);
+}
+
+#new-products-banner h3 {
+  margin-bottom: 0.5em;
+  font-size: 2em;
+}
+
+#new-products .col-md-4 {
+  padding: 0;
+}
+
+#new-products .card img {
+  height: 150px;
+  width: 90px;
+  margin: 2em auto;
 }
 
 @media (min-width: 768px) {
